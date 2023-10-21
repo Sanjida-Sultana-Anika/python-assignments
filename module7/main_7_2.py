@@ -1,16 +1,14 @@
-# Write a program that asks the user to enter names until he/she enters an empty string.
-# After each name is read the program either prints out New name or
-# Existing name depending on whether the name was entered for the first time.
-# Finally, the program lists out the input names one by one, one below another in any order.
-# Use the set data structure to store the names.
-names = []
-i = 0
-all_names = input(print("Enter a name or press enter:"))
+names = set()
 
-while all_names == "":
+while True:
+    user_input_name = input("Enter a name or press enter: ")
+    if user_input_name == "":
+        break
 
-    input(print("Enter next name:"))
-    i += i
-    names.append(names)
-
-print(names)
+    if user_input_name in names:
+        print("Existing name")
+    else:
+        print("New name")
+        names.add(user_input_name)
+for name in names:
+    print(name)

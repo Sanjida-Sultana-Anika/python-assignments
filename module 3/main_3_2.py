@@ -1,5 +1,5 @@
 print("Welcome to the cruise ship! We provide LUX, A, B, and C cabin classes.")
-cabinClass = input("Please select your cabin class:")
+cabinClass = input("Please select your cabin class: ").upper()
 cabin1 = "LUX"
 cabin2 = "A"
 cabin3 = "B"

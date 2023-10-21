@@ -1,4 +1,4 @@
-gender = input("Select biological gender 'male/ female':")
+gender = input("Select biological gender 'male/ female': ")
 hemoglobin = float(input("Please type your hemoglobin value:"))
 
 gender1 = "female"

@@ -1,10 +1,7 @@
-size = float(input("Insert your number in inches")) * 2.54
-
-while size == size:
+while True:
+    size = float(input("Insert your number in inches: ")) * 2.54
     if size < 0:
+        print("Don't put negative number")
         break
-
-    print(f"Here is your result in cm:", size)
-   
-    size = input("Insert your number in inches")
-print("Don't put negative number")
+    else:
+        print(f"Here is your result in cm: {size:.2f}")

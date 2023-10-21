@@ -15,4 +15,3 @@ if len(numbers) < 5:
 
 for i in range(loopCount):
     print(f"Number {i+1}: {numbers[i]}")
-

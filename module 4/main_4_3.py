@@ -1,24 +1,20 @@
-
 largest = None
 smallest = None
+
 while True:
     num = input("Enter a number: ")
     if num == "":
         break
-    """try:
-        num = int(num)
-    except:
-        print("Invalid input")
-        continue"""
+    try:
+        num_float = float(num)
+        if largest is None or num_float > largest:
+            largest = num_float
+        if smallest is None or num_float < smallest:
+            smallest = num_float
+    except ValueError:
+        print("Invalid input.")
 
-    if largest is None:
-        largest = num
-    elif num > largest:
-        largest = num
-    if smallest is None:
-        smallest = num
-    elif num < smallest:
-        smallest = num
-
-print("Maximum is", largest)
-print("Minimum is", smallest)
+if largest is not None:
+    print(f"Maximum is {largest}.")
+if smallest is not None:
+    print(f"Minimum is {smallest}.")

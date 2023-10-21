@@ -1,5 +1,5 @@
 import math
 
-radius = float(input("Input your value:"))
+radius = float(input("Input the radius of your circle: "))
 formula = math.pi*radius*radius
-print("Here's your result:", formula)
+print(f"Here's your result: {formula:.2f}")

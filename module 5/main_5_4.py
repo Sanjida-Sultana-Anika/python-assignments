@@ -6,5 +6,5 @@ for i in range(5):
 
 print("Cities in your list are:")
 for city in cities:
-    city_per_line = city.split()
-    print(city_per_line)
+    # city_per_line = city.split()
+    print(city)
